@@ -1,6 +1,7 @@
 /*! init.css @ 2017 dlqjaen*/
 html{
     box-sizing: border-box;
+    overflow-y: scroll;
     font-size: 10px;
 }
 *, *::before, *::after{
