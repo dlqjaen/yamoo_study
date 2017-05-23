@@ -1,0 +1,87 @@
+@charset "utf-8";
+.toggle-grid{
+    position: relative;
+}
+.toggle-grid::before, .toggle-grid::after{
+    position: absolute;
+    content:"";
+    top: 0;
+    height: 100vh;
+}
+.toggle-grid::before{
+    z-index: 10000;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 20px, blue 20px);
+    background-size: 1px 21px;
+}
+.toggle-grid::after{
+    z-index: 10010;
+    width: 1080px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent 10px, rgba(250,200,50,0.5) 10px, rgba(250,200,50,0.5) 80px, transparent 80px);
+    background-size: 90px 1px;
+}
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    background: palegreen;
+    height: 100vh;
+}
+.row::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.box{
+    background: purple;
+}
+.col{
+    height: 42px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.inline:first-child{
+    margin-left: 0;
+}
+.inline:last-child{
+    margin-right: 0;
+}
+.is-1{
+    width: 70px;
+}
+.is-2{
+    width: 160px;
+}
+.is-3{
+    width: 250px;
+}
+.is-4{
+    width: 340px;
+}
+.is-5{
+    width: 430px;
+}
+.is-6{
+    width: 520px;
+}
+.is-7{
+    width: 610px;
+}
+.is-8{
+    width: 700px;
+}
+.is-9{
+    width: 790px;
+}
+.is-10{
+    width: 880px;
+}
+.is-11{
+    width: 970px;
+}
+.is-12{
+    width: 1060px;
+}

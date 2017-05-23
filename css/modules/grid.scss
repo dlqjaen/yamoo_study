@@ -1,0 +1,89 @@
+/*! grid.css @ 2017, */
+/*
+설계
+--------------------------
+base-font-size    : 14px;
+leading           : 1.5
+$columns          : 12
+$column-width     : 70px
+$gutter-position  : split
+$gutter-width     : 10px
+*/
+@import 'seting';
+/* Toggle Frid Module */
+.#{$toggle-classname}{
+    position: relative;
+}
+.#{$toggle-classname}::after, .#{$toggle-classname}::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: $guide-height; 
+}
+.#{$toggle-classname}::before{
+    $leading-limit: $leading - 1;
+    z-index: 10000;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+        180deg, 
+        transparent $leading-limit, 
+        #0cf $leading-limit);
+    background-size: 1px $leading;
+}
+.#{$toggle-classname}::after{
+    $full-width: $columns-width + $gutter-width;
+    z-index: 10010;
+    left: 50%;
+    width: $page-width;
+    background: linear-gradient(
+        90deg, 
+        transparent $half-gutter-width, 
+        $colimns-color $half-gutter-width, 
+        $colimns-color $columns-width + $half-gutter-width, 
+        transparent  $columns-width + $half-gutter-width);
+    background-size: $full-width 1px;
+    transform: translate(-50%);
+}
+/* Container Module */
+.container{
+    width: $page-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Row Module */
+.row{
+    &::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    &.is-nesting{
+        & > :first-child{margin-left: 0;}
+        & > :last-child{margin-right: 0;}
+    }
+}
+/* Column Module */
+.col{
+    float: left;
+    margin-left: $half-gutter-width;
+    margin-right: $half-gutter-width;
+}
+// @for $i from 1 to 13{
+//     .is-#{$i}{
+//         width: 70 * $i + (-1 + $i) * 20;
+//     }
+// }
+@for $i from 1 through $columns{
+    .is-#{$i}{
+        width: column-width($i);
+    }
+    .is-offset-#{$i}{
+        margin-left:  offset-width($i);
+    }
+}
+/* Offeset Module */
+/* Utilities Module */
+// .isolate
+// .hiiden
+// .a11y-hiiden
