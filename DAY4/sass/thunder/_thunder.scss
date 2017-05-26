@@ -1,0 +1,17 @@
+/// width, heigh 를 빠르게 처리하는 헬퍼 믹스인
+/// @access  public
+/// @author  thunderman
+/// @param   {Number | auto | Null} - width, hight 속성 값
+/// @content width, height를 빠르게 작성한다.
+/// @example sass
+///     .demo
+///         @include size(920px, 330px)
+///
+///     .demo
+///         @include size(920px)
+@mixin size($width: auto, $height: null){
+    width: $width;
+    height: $height;
+}
+
+/// @link http://sassdoc.com/annotations

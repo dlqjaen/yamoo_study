@@ -1,0 +1,30 @@
+.banner{
+    margin-top: 42px;
+}
+.container .banner-img{
+    font-size: 0;
+    height: auto;
+    margin-bottom: 21px;
+}
+.round::before{
+    margin-top: 5px;
+    cursor: pointer;
+    float: left;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.banner .img-nav{
+    height: 21px;
+}
+.round-box{
+    width: 230px;
+    margin: 0 auto;
+}
+.round12::before{
+    margin-right: 0;
+    background: #bd1d31;
+}

@@ -13,33 +13,170 @@
     }
     .box {
       height: 63px;
-      border: 1px solid #333;
-      color: #fff;
-      line-height: 63px;
-    }d
+      /*background: #333;*/
+      /*color: #fff;*/
+    }
     .gap {
-      margin-bottom: 21px;
+      margin-bottom: 42px;
     }
   </style>
 </head>
-<body class="show-grid">
-
-  <div class="container">
-    <div class="row gap">
+<body class=>
+  <header class="container">
+    <div class="row gap banner-top">
       <h1 class="box col is-3 logo">
-        <img class="logo-img" src="images/header/logo.png" alt="yuyu.com logo">
+        <a href="#">
+          <img class="logo-img" src="images/header/logo.png" alt="yuyu.com logo">
+        </a>
       </h1>
-      <form class="box col is-4 search">
-        <input type="search" name="search-bar" placeholder="검색어를 입력하세요." value="">
+      <form class="box col is-4 is-offset-1 search">
+        <fieldset>
+          <legend class="a11y-hidden">검색폼</legend>
+          <label class="search-title" for="search"><img src="images/icons/icons.svg" alt="검색"></label>
+          <input type="search" id="search" name="search-bar" placeholder="검색어를 입력하세요." value="">
+        </fieldset>
       </form>
+      <ul class="box col is-2 is-offset-2 sign">
+        <li class="sign-in"><a href="#">로그인</a></li>
+        <li class="sign-up"><a href="#">회원가입</a></li>
+      </ul>
     </div>
-    <div class="row is-isolate">
-      <div class="box col is-4">column 1/3</div>
-      <div class="box col is-4">column 1/3</div>
-      <div class="box col is-4">column 1/3</div>
+    <nav class="row menu-box">
+      <ul class="box col is-12 menu">
+        <li class="menu-list"><a href="#">main</a></li>
+        <li class="menu-list"><a href="#">brand</a></li>
+        <li class="menu-list"><a href="#">special</a></li>
+        <li class="menu-list"><a href="#">outer</a></li>
+        <li class="menu-list"><a href="#">tops</a></li>
+        <li class="menu-list"><a href="#">bottom</a></li>
+        <li class="menu-list"><a href="#">dress</a></li>
+        <li class="menu-list"><a href="#">shoes</a></li>
+        <li class="menu-list"><a href="#">bag</a></li>
+        <li class="menu-list"><a href="#">acc</a></li>
+        <li class="menu-list"><a href="#">summer</a></li>
+        <li class="menu-list"><a href="#">etc</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="row filter">
+    <div class=" filter-box">
+      <a href="#">
+        <div class="filter-icon">
+          <img src="images/icons/icons.svg" alt="filter-icon">
+        </div>
+        필터를 설정하세요.
+      </a>
     </div>
-  </div>
-
+    <form class="filter-check age">
+      <legend>연령대</legend>
+      <label for="ten">10대</label>
+      <input type="checkbox" name="ten" id="ten">
+      <label for="two">20대</label>
+      <input type="checkbox" name="two" id="two">
+      <label for="three">30대</label>
+      <input type="checkbox" name="three" id="three">
+    </form>
+    <form  class="filter-check style">
+      <legend>스타일</legend>
+      <label for="girl">소녀룩</label>
+      <input type="checkbox" name="girl" id="girl">
+      <label for="morden">모던시크</label>
+      <input type="checkbox" name="morden" id="morden">
+      <label for="simple">심플베이지</label>
+      <input type="checkbox" name="simple" id="simple">
+      <label for="romantic">로맨틱</label>
+      <input type="checkbox" name="romantic" id="romantic">
+      <label for="office">오피스룩</label>
+      <input type="checkbox" name="office" id="office">
+      <label for="campus">캠퍼스룩</label>
+      <input type="checkbox" name="campus" id="campus">
+      <label for="bintige">빈티지</label>
+      <input type="checkbox" name="bintige" id="bintige">
+      <label for="training">트레이닝</label>
+      <input type="checkbox" name="training" id="training">
+    </form>
+    <form class="complite">
+      <legend class="a11y-hidden">결정</legend>
+      <label for="reset" class="a11y-hidden reset">초기화</label>
+      <input type="button" id="reset" name="reset" value="초기화">
+      <label for="select" class="a11y-hidden">필터 선택 완료</label>
+      <input type="button" id="select" name="select" value="필터 선택 완료">
+    </form>
+  </aside>
+  <main class="container">
+    <section class="row banner">
+      <div class="box col is-12 banner-img">
+        <img src="images/banner/banner-01.jpg" alt="bannerimage">
+      </div>
+      <div class="box col is-12 img-nav">
+        <div class="round-box">
+          <div class="round round1"></div>
+          <div class="round round2"></div>
+          <div class="round round3"></div>
+          <div class="round round4"></div>
+          <div class="round round5"></div>
+          <div class="round round6"></div>
+          <div class="round round7"></div>
+          <div class="round round8"></div>
+          <div class="round round9"></div>
+          <div class="round round10"></div>
+          <div class="round round11"></div>
+          <div class="round round12"></div>
+        </div>
+      </div>
+    </section>
+    <section class="row bestseller">
+      <h2 class="best-box col is-12">베스트셀러</h2>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-01.jpg" alt="">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Zemma World</h3>
+          <p class="item-kinds">Puppy-코튼니트</p>
+          <p class="item-price">39,000원</p>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-02.jpg" alt="">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Zemma World</h3>
+          <p class="item-kinds">Puppy-코튼니트</p>
+          <p class="item-price">39,000원</p>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-03.jpg" alt="">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Zemma World</h3>
+          <p class="item-kinds">Puppy-코튼니트</p>
+          <p class="item-price">39,000원</p>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-04.jpg" alt="">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Zemma World</h3>
+          <p class="item-kinds">Puppy-코튼니트</p>
+          <p class="item-price">39,000원</p>
+        </div>
+      </div>
+    </section>
+  </main>
 <script src="./js/toggleGrid.js"></script>
 </body>
 </html>

@@ -1,15 +1,326 @@
 /*! grid.css @ 2017, yamoo9.net */
-h1 {
+* {
+  box-sizing: border-box;
+}
+
+p {
   margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+.a11y-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  padding: 0;
+  margin: -1;
+}
+
+.banner-top {
+  line-height: 63px;
+}
+
+.banner-top a:link, .banner-top a:visited {
+  color: #bd1d31;
 }
 
 .logo-img {
   height: 100%;
 }
 
+.logo a {
+  height: 63px;
+  display: inline;
+}
+
+.menu-box {
+  height: 42px;
+}
+
+.search fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.search .search-title {
+  box-sizing: content-box;
+  margin-top: 20px;
+  line-height: 1.2;
+  padding: 0 13px;
+  height: 19px;
+  overflow: hidden;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  background-position: 813px 0;
+}
+
+.search .search-title img {
+  width: 25px;
+  margin-top: -176px;
+}
+
+.search.is-4 {
+  width: 380px;
+  margin-left: 80px;
+  margin-right: 0;
+}
+
 .search input {
+  height: 42px;
   width: 100%;
-  padding: 100px 0;
+  padding-left: 12px;
+}
+
+.sign.is-2 {
+  margin: 0 0 0 180px;
+  padding-left: 0;
+  position: relative;
+}
+
+.sign.is-2 a {
+  border-radius: 3px;
+  margin-top: 18px;
+  line-height: 1.2;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+
+.sign.is-2 a:hover, .sign.is-2 a:focus {
+  border: 1px solid #9c3434;
+}
+
+.sign.is-2 li {
+  vertical-align: middle;
+  height: 63px;
+  position: absolute;
+}
+
+.sign.is-2 .sign-in {
+  right: 0;
+}
+
+.sign.is-2 .sign-up {
+  right: 79px;
+}
+
+.box.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 21px;
+}
+
+.box.menu .menu-list {
+  height: 21px;
+}
+
+.box.menu .menu-list a {
+  margin-top: -2px;
+  padding: 2px 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.box.menu .menu-list a:hover {
+  color: #bd1d31;
+  background-color: #fff;
+  border-radius: 0;
+  border-bottom: 2px solid #bd1d31;
+}
+
+.menu-list a:focus {
+  color: #fff;
+  background-color: #bd1d31;
+}
+
+.filter {
+  position: absolute;
+  border-top: 3px solid #bd1d31;
+  width: 100%;
+  background: #f0f0f0;
+  transition: all 1s;
+  height: 42px;
+  overflow: hidden;
+}
+
+.filter .filter-icon {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 20px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.filter img {
+  margin-top: -60px;
+  width: 20px;
+}
+
+.filter .filter-box {
+  position: relative;
+}
+
+.filter .filter-box a {
+  padding-top: 7px;
+  height: 39px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #bd1d31;
+  margin-bottom: 21px;
+}
+
+.filter-check {
+  width: 1060px;
+}
+
+.filter-check legend {
+  float: left;
+  margin-right: 20px;
+}
+
+.filter-check input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.filter-check label {
+  cursor: pointer;
+  margin-right: 10px;
+  background: #aaa;
+  border-radius: 3px 3px 0 0;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+}
+
+.age {
+  margin: 60px auto 21px auto;
+}
+
+.style {
+  margin: 0 auto 42px auto;
+}
+
+.complite {
+  width: 1060px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.complite input {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin-top: 5px;
+  height: 30px;
+}
+
+.complite #reset {
+  width: 85px;
+  margin-right: 10px;
+  background: #aaa;
+}
+
+.complite #select {
+  width: 130px;
+  background: #bd1d31;
+}
+
+.filter:hover {
+  height: 231px;
+}
+
+.banner {
+  margin-top: 42px;
+}
+
+.container .banner-img {
+  font-size: 0;
+  height: auto;
+  margin-bottom: 21px;
+}
+
+.round::before {
+  margin-top: 5px;
+  cursor: pointer;
+  float: left;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.banner .img-nav {
+  height: 21px;
+}
+
+.round-box {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.round12::before {
+  margin-right: 0;
+  background: #bd1d31;
+}
+
+.best-box.is-12 {
+  margin-top: 42px;
+  margin-bottom: 21px;
+  height: 21px;
+  font-size: 17px;
+}
+
+.best-box.is-3 {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.item a {
+  display: block;
+}
+
+.item a img {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+}
+
+.d9n {
+  line-height: 1.2;
+  padding-top: 4px;
+}
+
+.d9n .item-name {
+  font-size: 16px;
 }
 
 .show-grid {
@@ -21,7 +332,7 @@ h1 {
   content: '';
   position: absolute;
   top: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .show-grid::before {

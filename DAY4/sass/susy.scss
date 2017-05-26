@@ -1,0 +1,26 @@
+@import "../sass/susy/susy";
+@import "config";
+@import "../sass/yamoo9/yamoo9";
+
+// $base-line-height: $base-font-size * 1.5;
+
+body{
+    @extend %reset-margin;
+}
+.page{
+    @include container(1280px);
+    height: 100vh;
+}
+
+.box{
+    height: 42px;
+    @include px-rem(height, 42px);
+    &.is-1{
+        @include span(30%);
+        @include bg-color(#333, 0.5);
+    }
+    &.is-2{
+        @include span(30%);
+        @include bg-color(#f00, 0.5);
+    }
+}
