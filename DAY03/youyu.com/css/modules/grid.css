@@ -218,6 +218,10 @@ a {
   height: 20px;
 }
 
+.filter-check label:hover, .filter-check label:focus {
+  background: #bd1d31;
+}
+
 .age {
   margin: 60px auto 21px auto;
 }
@@ -247,8 +251,16 @@ a {
   background: #aaa;
 }
 
+.complite #reset:focus, .complite #reset:hover {
+  background: #bd1d31;
+}
+
 .complite #select {
   width: 130px;
+  background: #aaa;
+}
+
+.complite #select:hover, .complite #select:focus {
   background: #bd1d31;
 }
 
@@ -292,7 +304,11 @@ a {
   background: #bd1d31;
 }
 
-.best-box.is-12 {
+.round::before:hover, .round::before:hover {
+  background: #bd1d31;
+}
+
+.best-box.is-12, .title-box.is-12 {
   margin-top: 42px;
   margin-bottom: 21px;
   height: 21px;
@@ -300,8 +316,14 @@ a {
 }
 
 .best-box.is-3 {
+  box-sizing: border-box;
+  height: 357px;
   padding: 20px;
   border: 1px solid #ddd;
+}
+
+.best-box.is-3:hover {
+  border: 1px solid #bd1d31;
 }
 
 .item a {
@@ -315,12 +337,149 @@ a {
 }
 
 .d9n {
-  line-height: 1.2;
-  padding-top: 4px;
+  line-height: 1.4;
+  padding-top: 21px;
 }
 
 .d9n .item-name {
   font-size: 16px;
+}
+
+.d9n .item-price {
+  margin-top: 21px;
+  font-size: 18px;
+  float: left;
+  color: #bd1d31;
+}
+
+.d9n .like-btn {
+  cursor: pointer;
+  margin-top: 23px;
+  float: right;
+  width: 21px;
+  height: 16px;
+  border: none;
+  background: url("../../images/icons/icons.svg") no-repeat;
+  background-size: 100% auto;
+  background-position: 0 -116px;
+  overflow: hidden;
+}
+
+.d9n .like-btn:hover {
+  background-position: 0 -101px;
+}
+
+.d9n .like-btn:focus {
+  background-position: 0 -101px;
+}
+
+.brand {
+  position: relative;
+}
+
+.brand-list {
+  color: #fff;
+}
+
+.brand-list-1 {
+  background: url("../../images/brand/brand-01.jpg");
+}
+
+.brand-list-2 {
+  background: url("../../images/brand/brand-02.jpg");
+}
+
+.brand-list-3 {
+  background: url("../../images/brand/brand-03.jpg");
+}
+
+.brand-list-4 {
+  background: url("../../images/brand/brand-04.jpg");
+}
+
+.brand-title-box {
+  font-size: 30px;
+  text-shadow: 0 -1px 3px #333, 0 1px 3px #333;
+  text-align: center;
+  line-height: 126px;
+  height: 126px;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.5);
+  height: 21px;
+  padding: 0 10px;
+}
+
+.brand-like-btn {
+  cursor: pointer;
+  float: right;
+  margin-top: 2px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background: url("../../images/brand/like-blank.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.brand-like-btn:hover, .brand-like-btn:focus {
+  background: url("../../images/brand/like.png") no-repeat;
+}
+
+.brand-btn {
+  cursor: pointer;
+  height: 147px;
+  position: absolute;
+  top: 84px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.brand-prev {
+  left: -22px;
+}
+
+.brand-prev::before {
+  content: "";
+  display: inline-block;
+  background: url("../../images/brand/left-arrow.png") no-repeat;
+  background-size: 100% auto;
+  width: 6px;
+  height: 10px;
+}
+
+.brand-next::before {
+  content: "";
+  display: inline-block;
+  background: url("../../images/brand/right-arrow.png") no-repeat;
+  background-size: 100% auto;
+  width: 6px;
+  height: 10px;
+}
+
+.sister-tip {
+  position: relative;
+}
+
+.is-4.tip {
+  height: 231px;
+}
+
+.tip a {
+  display: block;
+}
+
+.tip-box {
+  margin-right: 10px;
+  width: 230px;
+  position: absolute;
+  top: 42px;
+  right: 0;
+}
+
+.review-box {
+  height: 436px;
+  padding: 0 20px;
 }
 
 .show-grid {

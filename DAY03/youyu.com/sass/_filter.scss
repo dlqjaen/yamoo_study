@@ -55,6 +55,9 @@
         width: 70px;
         height: 20px;
     }
+    label:hover, label:focus{
+        background: #bd1d31;
+    }
 }
 .age{
     margin: 60px auto 21px auto;
@@ -79,8 +82,14 @@
         margin-right: 10px;
         background: #aaa;
     }
+    #reset:focus, #reset:hover{
+        background: #bd1d31;
+    }
     #select{
         width: 130px;
+        background: #aaa;
+    }
+    #select:hover, #select:focus{
         background: #bd1d31;
     }
 }
