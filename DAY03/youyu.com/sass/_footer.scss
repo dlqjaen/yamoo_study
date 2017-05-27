@@ -1,0 +1,53 @@
+.footer::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.address{
+    width: 645px;
+    float: left;
+    margin-left: 10px;
+    font-style: normal;
+}
+.address-list{
+    margin: 0;
+    .address-dt{
+        float: left;
+    }
+    .address-dd{
+        float: left;
+        margin-left: 5px;
+        margin-right: 22px;
+    }
+}
+.address-list::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.as-center{
+    float: right;
+    margin-right: 10px;
+    .as-title{
+        color: #4b4b4b;
+        line-height: 21px;
+        font-size: 21px;
+    }
+    .as-number{
+        color: #bd1d31;
+        height: 42px;
+        line-height: 42px;
+        font-size: 30px;
+    }
+}
+.sns{
+    height: 42px;
+    margin-bottom: 21px;
+    margin-top: 21px;
+    margin-left: 10px;
+    width: 400px;
+    float: left;
+    .sns-icon{
+        float: left;
+    }
+}

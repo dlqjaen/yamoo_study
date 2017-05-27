@@ -1,0 +1,33 @@
+.site-info{
+    height: 42px;
+    width: 100%;
+    background: #555;
+}
+.site-list{
+    width: 1060px;
+    margin: 0 auto;
+}
+.site-list::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.site-item{
+        box-sizing: content-box;
+        padding: 10px 0;
+    float: left;
+    a{  
+        padding: 0 40px;
+        border-right: 1px solid #888;
+        color: #bcbcbc;
+    }
+    a:hover, a:focus{
+        border-color:#555;
+        border-radius: 3px;
+        background: #fff;
+        color: #555;
+    }
+}
+.site-item:first-child a{
+    border-left: 1px solid #888;
+}
