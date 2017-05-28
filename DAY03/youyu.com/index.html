@@ -33,7 +33,7 @@
         <fieldset>
           <legend class="a11y-hidden">검색폼</legend>
           <label class="search-title" for="search"><img src="images/icons/icons.svg" alt="검색"></label>
-          <input type="search" id="search" name="search-bar" placeholder="검색어를 입력하세요." value="">
+          <input type="search" id="search" name="search-bar" placeholder="검색어를 입력하세요.">
         </fieldset>
       </form>
       <ul class="box col is-2 is-offset-2 sign">
@@ -68,43 +68,50 @@
       </a>
     </div>
     <form class="filter-check age">
-      <legend tabindex="0">연령대</legend>
-      <label for="ten" tabindex="0">10대</label>
-      <input type="checkbox" name="ten" id="ten">
-      <label for="two" tabindex="0">20대</label>
-      <input type="checkbox" name="two" id="two">
-      <label for="three" tabindex="0">30대</label>
-      <input type="checkbox" name="three" id="three">
+      <fieldset>
+        <legend tabindex="0">연령대</legend>
+        <label for="ten" tabindex="0">10대</label>
+        <input type="checkbox" name="ten" id="ten">
+        <label for="two" tabindex="0">20대</label>
+        <input type="checkbox" name="two" id="two">
+        <label for="three" tabindex="0">30대</label>
+        <input type="checkbox" name="three" id="three">
+      </fieldset>
     </form>
     <form  class="filter-check style">
-      <legend tabindex="0">스타일</legend>
-      <label for="girl" tabindex="0">소녀룩</label>
-      <input type="checkbox" name="girl" id="girl">
-      <label for="morden" tabindex="0">모던시크</label>
-      <input type="checkbox" name="morden" id="morden">
-      <label for="simple" tabindex="0">심플베이지</label>
-      <input type="checkbox" name="simple" id="simple">
-      <label for="romantic" tabindex="0">로맨틱</label>
-      <input type="checkbox" name="romantic" id="romantic">
-      <label for="office" tabindex="0">오피스룩</label>
-      <input type="checkbox" name="office" id="office">
-      <label for="campus" tabindex="0">캠퍼스룩</label>
-      <input type="checkbox" name="campus" id="campus">
-      <label for="bintige" tabindex="0">빈티지</label>
-      <input type="checkbox" name="bintige" id="bintige">
-      <label for="training" tabindex="0">트레이닝</label>
-      <input type="checkbox" name="training" id="training">
+      <fieldset>
+        <legend tabindex="0">스타일</legend>
+        <label for="girl" tabindex="0">소녀룩</label>
+        <input type="checkbox" name="girl" id="girl">
+        <label for="morden" tabindex="0">모던시크</label>
+        <input type="checkbox" name="morden" id="morden">
+        <label for="simple" tabindex="0">심플베이지</label>
+        <input type="checkbox" name="simple" id="simple">
+        <label for="romantic" tabindex="0">로맨틱</label>
+        <input type="checkbox" name="romantic" id="romantic">
+        <label for="office" tabindex="0">오피스룩</label>
+        <input type="checkbox" name="office" id="office">
+        <label for="campus" tabindex="0">캠퍼스룩</label>
+        <input type="checkbox" name="campus" id="campus">
+        <label for="bintige" tabindex="0">빈티지</label>
+        <input type="checkbox" name="bintige" id="bintige">
+        <label for="training" tabindex="0">트레이닝</label>
+        <input type="checkbox" name="training" id="training">
+      </fieldset>
     </form>
     <form class="complite">
-      <legend class="a11y-hidden">결정</legend>
-      <label for="reset" class="a11y-hidden reset">초기화</label>
-      <input type="button" id="reset" name="reset" value="초기화">
-      <label for="select" class="a11y-hidden">필터 선택 완료</label>
-      <input type="button" id="select" name="select" value="필터 선택 완료">
+      <fieldset>
+        <legend class="a11y-hidden">결정</legend>
+        <label for="reset" class="a11y-hidden reset">초기화</label>
+        <input type="button" id="reset" name="reset" value="초기화">
+        <label for="select" class="a11y-hidden">필터 선택 완료</label>
+        <input type="button" id="select" name="select" value="필터 선택 완료">
+      </fieldset>
     </form>
   </aside>
   <main class="container">
     <section class="row banner">
+      <h2 class="a11y-hidden">진행중인 행사안내</h2>
       <div class="box col is-12 banner-img">
         <img src="images/banner/banner-01.jpg" alt="bannerimage">
       </div>
@@ -113,29 +120,29 @@
           <fieldset class="slide-btn-box">
             <legend class="a11y-hidden">이미지슬라이드</legend>
             <label for="round1" class="a11y-hidden">이미지1</label>
-            <input type="button" class="round" id="rounsd1">
+            <input type="button" class="round" id="round1" value="event-image1">
             <label for="round2" class="a11y-hidden">이미지2</label>
-            <input type="button" class="round" id="round2">
+            <input type="button" class="round" id="round2" value="event-image2">
             <label for="round3" class="a11y-hidden">이미지3</label>
-            <input type="button" class="round" id="round3">
+            <input type="button" class="round" id="round3" value="event-image3">
             <label for="round4" class="a11y-hidden">이미지4</label>
-            <input type="button" class="round" id="round4">
+            <input type="button" class="round" id="round4" value="event-image4">
             <label for="round5" class="a11y-hidden">이미지5</label>
-            <input type="button" class="round" id="round5">
+            <input type="button" class="round" id="round5" value="event-image5">
             <label for="round6" class="a11y-hidden">이미지6</label>
-            <input type="button" class="round" id="round6">
+            <input type="button" class="round" id="round6" value="event-image6">
             <label for="round7" class="a11y-hidden">이미지7</label>
-            <input type="button" class="round" id="round7">
+            <input type="button" class="round" id="round7" value="event-image7">
             <label for="round8" class="a11y-hidden">이미지8</label>
-            <input type="button" class="round" id="round8">
+            <input type="button" class="round" id="round8" value="event-image8">
             <label for="round9" class="a11y-hidden">이미지9</label>
-            <input type="button" class="round" id="round9">
+            <input type="button" class="round" id="round9" value="event-image9">
             <label for="round10" class="a11y-hidden">이미지10</label>
-            <input type="button" class="round" id="round10">
+            <input type="button" class="round" id="round10" value="event-image10">
             <label for="round11" class="a11y-hidden">이미지11</label>
-            <input type="button" class="round" id="round11">
+            <input type="button" class="round" id="round11" value="event-image11">
             <label for="round12" class="a11y-hidden">이미지12</label>
-            <input type="button" class="round" id="round12">
+            <input type="button" class="round" id="round12" value="event-image12">
           </fieldset>
         </form>
       </div>
@@ -145,7 +152,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/best-seller/bs-seller-01.jpg" alt="">
+            <img src="images/best-seller/bs-seller-01.jpg" alt="베스트셀러 상품-1">
           </a>
         </div>
         <div class="d9n">
@@ -158,7 +165,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/best-seller/bs-seller-02.jpg" alt="">
+            <img src="images/best-seller/bs-seller-02.jpg" alt="베스트셀러 상품-2">
           </a>
         </div>
         <div class="d9n">
@@ -171,7 +178,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/best-seller/bs-seller-03.jpg" alt="">
+            <img src="images/best-seller/bs-seller-03.jpg" alt="베스트셀러 상품-3">
           </a>
         </div>
         <div class="d9n">
@@ -184,7 +191,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/best-seller/bs-seller-04.jpg" alt="">
+            <img src="images/best-seller/bs-seller-04.jpg" alt="베스트셀러 상품-4">
           </a>
         </div>
         <div class="d9n">
@@ -241,7 +248,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/new-items/new-product-01.jpg" alt="">
+            <img src="images/new-items/new-product-01.jpg" alt="신상품1">
           </a>
         </div>
         <div class="d9n">
@@ -254,7 +261,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/new-items/new-product-02.jpg" alt="">
+            <img src="images/new-items/new-product-02.jpg" alt="신상품2">
           </a>
         </div>
         <div class="d9n">
@@ -267,7 +274,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/new-items/new-product-03.jpg" alt="">
+            <img src="images/new-items/new-product-03.jpg" alt="신상품3">
           </a>
         </div>
         <div class="d9n">
@@ -280,7 +287,7 @@
       <div class="best-box col is-3 best-list">
         <div class="item">
           <a href="#">
-            <img src="images/new-items/new-product-04.jpg" alt="">
+            <img src="images/new-items/new-product-04.jpg" alt="신상품4">
           </a>
         </div>
         <div class="d9n">
@@ -295,46 +302,46 @@
       <h2 class="title-box col is-12">언니의 팁</h2>
       <div class="box col is-4 tip-1 tip">
         <a href="#">
-          <img src="images/tip/product-1.jpg" alt="">
+          <img src="images/tip/product-1.jpg" alt="언니가 알려주는 패션팁1">
         </a>
       </div>
       <div class="box col is-4 tip-2 tip">
         <a href="#">
-          <img src="images/tip/product-2.jpg" alt="">
+          <img src="images/tip/product-2.jpg" alt="언니가 알려주는 패션팁2">
         </a>
       </div>
       <div class="box col is-4 tip-3 tip">
         <a href="#">
-          <img src="images/tip/product-3.jpg" alt="">
+          <img src="images/tip/product-3.jpg" alt="언니가 알려주는 패션팁3">
         </a>
       </div>
         <form class="tip-box">
           <fieldset class="slide-btn-box">
             <legend class="a11y-hidden">이미지슬라이드</legend>
             <label for="tip1" class="a11y-hidden">이미지1</label>
-            <input type="button" class="round" id="tip1">
+            <input type="button" class="round" id="tip1" value="tip-image1">
             <label for="tip2" class="a11y-hidden">이미지2</label>
-            <input type="button" class="round" id="tip2">
+            <input type="button" class="round" id="tip2" value="tip-image2">
             <label for="tip3" class="a11y-hidden">이미지3</label>
-            <input type="button" class="round" id="tip3">
+            <input type="button" class="round" id="tip3" value="tip-image3">
             <label for="tip4" class="a11y-hidden">이미지4</label>
-            <input type="button" class="round" id="tip4">
+            <input type="button" class="round" id="tip4" value="tip-image4">
             <label for="tip5" class="a11y-hidden">이미지5</label>
-            <input type="button" class="round" id="tip5">
+            <input type="button" class="round" id="tip5" value="tip-image5">
             <label for="tip6" class="a11y-hidden">이미지6</label>
-            <input type="button" class="round" id="tip6">
+            <input type="button" class="round" id="tip6" value="tip-image6">
             <label for="tip7" class="a11y-hidden">이미지7</label>
-            <input type="button" class="round" id="tip7">
+            <input type="button" class="round" id="tip7" value="tip-image7">
             <label for="tip8" class="a11y-hidden">이미지8</label>
-            <input type="button" class="round" id="tip8">
+            <input type="button" class="round" id="tip8" value="tip-image8">
             <label for="tip9" class="a11y-hidden">이미지9</label>
-            <input type="button" class="round" id="tip9">
+            <input type="button" class="round" id="tip9" value="tip-image9">
             <label for="tip10" class="a11y-hidden">이미지10</label>
-            <input type="button" class="round" id="tip10">
+            <input type="button" class="round" id="tip10" value="tip-image10">
             <label for="tip11" class="a11y-hidden">이미지11</label>
-            <input type="button" class="round" id="tip11">
+            <input type="button" class="round" id="tip11" value="tip-image11">
             <label for="tip12" class="a11y-hidden">이미지12</label>
-            <input type="button" class="round" id="tip12">
+            <input type="button" class="round" id="tip12" value="tip-image12">
           </fieldset>
         </form>
     </section>
@@ -343,7 +350,7 @@
       <div class="review-box col is-2">
         <div class="review-img">
           <a href="#">
-            <img src="images/best-review/bs-product-01.jpg" alt="">
+            <img src="images/best-review/bs-product-01.jpg" alt="가디건에 대한 상품 리뷰이미지">
           </a>
         </div>
         <div class="review-content">
@@ -355,15 +362,15 @@
         <form class="gardigan-grade grade">
           <fieldset class="grade-box">
             <legend class="a11y-hidden">별점매기기</legend>
-            <label for="star1" class="star star1">첫번째 별</label>
+            <label for="gardigan-star1" class="star star1">첫번째 별</label>
             <input type="checkbox" id="gardigan-star1" class="a11y-hidden">
-            <label for="star1" class="star star2">두번째 별</label>
+            <label for="gardigan-star2" class="star star2">두번째 별</label>
             <input type="checkbox" id="gardigan-star2" class="a11y-hidden">
-            <label for="star1" class="star star3">세번째 별</label>
+            <label for="gardigan-star3" class="star star3">세번째 별</label>
             <input type="checkbox" id="gardigan-star3" class="a11y-hidden">
-            <label for="star1" class="star star4">네번째 별</label>
+            <label for="gardigan-star4" class="star star4">네번째 별</label>
             <input type="checkbox" id="gardigan-star4" class="a11y-hidden">
-            <label for="star1" class="star star5">다섯번째 별</label>
+            <label for="gardigan-star5" class="star star5">다섯번째 별</label>
             <input type="checkbox" id="gardigan-star5" class="a11y-hidden">
           </fieldset>
         </form>
@@ -371,7 +378,7 @@
       <div class="review-box col is-2">
         <div class="review-img">
           <a href="#">
-            <img src="images/best-review/bs-product-02.jpg" alt="">
+            <img src="images/best-review/bs-product-02.jpg" alt="버클트임박시후드 상품 후기">
           </a>
         </div>
         <div class="review-content">
@@ -383,15 +390,15 @@
         <form class="bucle-grade grade">
           <fieldset class="grade-box">
             <legend class="a11y-hidden">별점매기기</legend>
-            <label for="star1" class="star star1">첫번째 별</label>
+            <label for="bucle-star1" class="star star1">첫번째 별</label>
             <input type="checkbox" id="bucle-star1" class="a11y-hidden">
-            <label for="star2" class="star star2">두번째 별</label>
+            <label for="bucle-star2" class="star star2">두번째 별</label>
             <input type="checkbox" id="bucle-star2" class="a11y-hidden">
-            <label for="star3" class="star star3">세번째 별</label>
+            <label for="bucle-star3" class="star star3">세번째 별</label>
             <input type="checkbox" id="bucle-star3" class="a11y-hidden">
-            <label for="star4" class="star star4">네번째 별</label>
+            <label for="bucle-star4" class="star star4">네번째 별</label>
             <input type="checkbox" id="bucle-star4" class="a11y-hidden">
-            <label for="star5" class="star star5">다섯번째 별</label>
+            <label for="bucle-star5" class="star star5">다섯번째 별</label>
             <input type="checkbox" id="bucle-star5" class="a11y-hidden">
           </fieldset>
         </form>
@@ -399,7 +406,7 @@
       <div class="review-box col is-2">
         <div class="review-img">
           <a href="#">
-            <img src="images/best-review/bs-product-03.jpg" alt="">
+            <img src="images/best-review/bs-product-03.jpg" alt="chic-자켓에대한 상품 후기">
           </a>
         </div>
         <div class="review-content">
@@ -411,15 +418,15 @@
         <form class="chic-grade grade">
           <fieldset class="grade-box">
             <legend class="a11y-hidden">별점매기기</legend>
-            <label for="star1" class="star star1">첫번째 별</label>
+            <label for="chic-star1" class="star star1">첫번째 별</label>
             <input type="checkbox" id="chic-star1" class="a11y-hidden">
-            <label for="star2" class="star star2">두번째 별</label>
+            <label for="chic-star2" class="star star2">두번째 별</label>
             <input type="checkbox" id="chic-star2" class="a11y-hidden">
-            <label for="star3" class="star star3">세번째 별</label>
+            <label for="chic-star3" class="star star3">세번째 별</label>
             <input type="checkbox" id="chic-star3" class="a11y-hidden">
-            <label for="star4" class="star star4">네번째 별</label>
+            <label for="chic-star4" class="star star4">네번째 별</label>
             <input type="checkbox" id="chic-star4" class="a11y-hidden">
-            <label for="star5" class="star star5">다섯번째 별</label>
+            <label for="chic-star5" class="star star5">다섯번째 별</label>
             <input type="checkbox" id="chic-star5" class="a11y-hidden">
           </fieldset>
         </form>
@@ -427,7 +434,7 @@
       <div class="review-box col is-2">
         <div class="review-img">
           <a href="#">
-            <img src="images/best-review/bs-product-04.jpg" alt="">
+            <img src="images/best-review/bs-product-04.jpg" alt="마실로 루즈핏 니트 상품후기">
           </a>
         </div>
         <div class="review-content">
@@ -439,15 +446,15 @@
         <form class="masilo-grade grade">
           <fieldset class="grade-box">
             <legend class="a11y-hidden">별점매기기</legend>
-            <label for="star1" class="star star1">첫번째 별</label>
+            <label for="masilo-star1" class="star star1">첫번째 별</label>
             <input type="checkbox" id="masilo-star1" class="a11y-hidden">
-            <label for="star2" class="star star2">두번째 별</label>
+            <label for="masilo-star2" class="star star2">두번째 별</label>
             <input type="checkbox" id="masilo-star2" class="a11y-hidden">
-            <label for="star3" class="star star3">세번째 별</label>
+            <label for="masilo-star3" class="star star3">세번째 별</label>
             <input type="checkbox" id="masilo-star3" class="a11y-hidden">
-            <label for="star4" class="star star4">네번째 별</label>
+            <label for="masilo-star4" class="star star4">네번째 별</label>
             <input type="checkbox" id="masilo-star4" class="a11y-hidden">
-            <label for="star5" class="star star5">다섯번째 별</label>
+            <label for="masilo-star5" class="star star5">다섯번째 별</label>
             <input type="checkbox" id="masilo-star5" class="a11y-hidden">
           </fieldset>
         </form>
@@ -455,7 +462,7 @@
       <div class="review-box col is-2">
         <div class="review-img">
           <a href="#">
-            <img src="images/best-review/bs-product-05.jpg" alt="">
+            <img src="images/best-review/bs-product-05.jpg" alt="멜라니 트렌치 코드 상품 후기">
           </a>
         </div>
         <div class="review-content">
@@ -467,15 +474,15 @@
         <form class="melani-grade grade">
           <fieldset class="grade-box">
             <legend class="a11y-hidden">별점매기기</legend>
-            <label for="star1" class="star star1">첫번째 별</label>
+            <label for="melani-star1" class="star star1">첫번째 별</label>
             <input type="checkbox" id="melani-star1" class="a11y-hidden">
-            <label for="star2" class="star star2">두번째 별</label>
+            <label for="melani-star2" class="star star2">두번째 별</label>
             <input type="checkbox" id="melani-star2" class="a11y-hidden">
-            <label for="star3" class="star star3">세번째 별</label>
+            <label for="melani-star3" class="star star3">세번째 별</label>
             <input type="checkbox" id="melani-star3" class="a11y-hidden">
-            <label for="star4" class="star star4">네번째 별</label>
+            <label for="melani-star4" class="star star4">네번째 별</label>
             <input type="checkbox" id="melani-star4" class="a11y-hidden">
-            <label for="star5" class="star star5">다섯번째 별</label>
+            <label for="melani-star5" class="star star5">다섯번째 별</label>
             <input type="checkbox" id="melani-star5" class="a11y-hidden">
           </fieldset>
         </form>
@@ -483,7 +490,7 @@
       <div class="review-box col is-2">
         <div class="review-img">
           <a href="#">
-            <img src="images/best-review/bs-product-06.jpg" alt="">
+            <img src="images/best-review/bs-product-06.jpg" alt="Luc-브이넥니트 상품 후기">
           </a>
         </div>
         <div class="review-content">
@@ -495,15 +502,15 @@
         <form class="luci-grade grade">
           <fieldset class="grade-box">
             <legend class="a11y-hidden">별점매기기</legend>
-            <label for="star1" class="star star1">첫번째 별</label>
+            <label for="luci-star1" class="star star1">첫번째 별</label>
             <input type="checkbox" id="luci-star1" class="a11y-hidden">
-            <label for="star2" class="star star2">두번째 별</label>
+            <label for="luci-star2" class="star star2">두번째 별</label>
             <input type="checkbox" id="luci-star2" class="a11y-hidden">
-            <label for="star3" class="star star3">세번째 별</label>
+            <label for="luci-star3" class="star star3">세번째 별</label>
             <input type="checkbox" id="luci-star3" class="a11y-hidden">
-            <label for="star4" class="star star4">네번째 별</label>
+            <label for="luci-star4" class="star star4">네번째 별</label>
             <input type="checkbox" id="luci-star4" class="a11y-hidden">
-            <label for="star5" class="star star5">다섯번째 별</label>
+            <label for="luci-star5" class="star star5">다섯번째 별</label>
             <input type="checkbox" id="luci-star5" class="a11y-hidden">
           </fieldset>
         </form>
@@ -546,11 +553,11 @@
     </aside>
     <div class="sns">
       <ul class="sns-list">
-        <li class="sns-icon chet"><a href="#"></a></li>
-        <li class="sns-icon orange"><a href="#"></a></li>
-        <li class="sns-icon facebook"><a href="#"></a></li>
-        <li class="sns-icon wifi"><a href="#"></a></li>
-        <li class="sns-icon instagram"><a href="#"></a></li>
+        <li class="sns-icon"><a class="chet" href="#"></a></li>
+        <li class="sns-icon"><a class="orange" href="#"></a></li>
+        <li class="sns-icon"><a class="facebook" href="#"></a></li>
+        <li class="sns-icon"><a class="wifi" href="#"></a></li>
+        <li class="sns-icon"><a class="instagram" href="#"></a></li>
       </ul>
       <img src="images/footer/partner.png" alt="유유닷컴과 코디북의 콜라보레이션 로고">
     </div>

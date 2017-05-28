@@ -28,6 +28,9 @@
 .round-box{
     width: 230px;
     margin: 0 auto;
+    input{
+        font-size: 0;
+    }
 }
 .round:last-child{
     margin-right: 0;

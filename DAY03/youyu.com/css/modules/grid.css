@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Nanum Square';
+}
+
 p {
   margin: 0;
 }
@@ -24,6 +28,12 @@ a {
   text-decoration: none;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
 .a11y-hidden {
   width: 1px;
   height: 1px;
@@ -31,7 +41,31 @@ a {
   clip: rect(0, 0, 0, 0);
   position: absolute;
   padding: 0;
-  margin: -1;
+  margin: -1px;
+}
+
+@font-face {
+  font-family: 'Nanum Square';
+  font-weight: 400;
+  src: url("../fonts/Nanum Square/NanumSquareOTFRegular.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square ExtraB';
+  font-weight: 400;
+  src: url("../fonts/Nanum Square/NanumSquareOTFExtraBold.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square Light';
+  font-weight: 400;
+  src: url("../fonts/Nanum Square/NanumSquareOTFLight.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square Bold';
+  font-weight: 700;
+  src: url("../fonts/Nanum Square/NanumSquareOTFBold.otf");
 }
 
 .banner-top {
@@ -89,6 +123,8 @@ a {
   height: 42px;
   width: 100%;
   padding-left: 12px;
+  border: 2px solid #555656;
+  font-family: "Nanum Square Bold";
 }
 
 .sign.is-2 {
@@ -305,6 +341,10 @@ a {
   margin: 0 auto;
 }
 
+.round-box input {
+  font-size: 0;
+}
+
 .round:last-child {
   margin-right: 0;
   background: #bd1d31;
@@ -481,6 +521,10 @@ a {
   position: absolute;
   top: 42px;
   right: 0;
+}
+
+.tip-box input {
+  font-size: 0;
 }
 
 .review-box {
@@ -716,6 +760,71 @@ a {
 
 .sns .sns-icon {
   float: left;
+}
+
+.sns .sns-icon a {
+  margin-right: 5px;
+  margin-top: 10px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 3px;
+}
+
+.sns .chet {
+  background-color: #46cc22;
+}
+
+.sns .chet:hover, .sns .chet:focus {
+  background-image: url("../../images/icons/icons.svg");
+  background-size: 129% auto;
+  background-position: 0 -294px;
+}
+
+.sns .orange {
+  background-color: #dc7f3b;
+}
+
+.sns .orange:hover, .sns .orange:focus {
+  background-image: url("../../images/icons/icons.svg");
+  background-size: 129% auto;
+  background-position: 0 -273px;
+}
+
+.sns .facebook {
+  background-color: #475993;
+}
+
+.sns .facebook:hover, .sns .facebook:focus {
+  background-image: url("../../images/icons/icons.svg");
+  background-size: 125% auto;
+  background-position: 0 -60px;
+}
+
+.sns .wifi {
+  background-color: #f29600;
+}
+
+.sns .wifi:hover, .sns .wifi:focus {
+  background-image: url("../../images/icons/icons.svg");
+  background-size: 125% auto;
+  background-position: 0 -303px;
+}
+
+.sns .instagram {
+  border: 1px solid #ddd;
+}
+
+.sns .instagram:hover, .sns .instagram:hover {
+  background-image: url("../../images/icons/icons.svg");
+  background-size: 100% auto;
+  background-position: 0 -79px;
+  border: none;
+}
+
+.sns img {
+  margin-left: 15px;
+  margin-top: 7px;
 }
 
 .show-grid {

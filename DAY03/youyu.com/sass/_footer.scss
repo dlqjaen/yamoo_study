@@ -49,5 +49,58 @@
     float: left;
     .sns-icon{
         float: left;
+        a{
+            margin-right: 5px;
+            margin-top: 10px;
+            display: block;
+            width: 21px;
+            height: 21px;
+            border-radius: 3px;
+        }
+    }
+    .chet{
+        background-color: #46cc22;
+    }
+    .chet:hover, .chet:focus{
+        background-image: url("../../images/icons/icons.svg");
+        background-size: 129% auto;
+        background-position: 0 -294px;
+    }
+    .orange{
+        background-color: #dc7f3b;
+    }
+    .orange:hover, .orange:focus{
+        background-image: url("../../images/icons/icons.svg");
+        background-size: 129% auto;
+        background-position: 0 -273px;
+    }
+    .facebook{
+        background-color: #475993;
+    }
+    .facebook:hover, .facebook:focus{
+        background-image: url("../../images/icons/icons.svg");
+        background-size: 125% auto;
+        background-position: 0 -60px;
+    }
+    .wifi{
+        background-color: #f29600;
+    }
+    .wifi:hover, .wifi:focus{
+        background-image: url("../../images/icons/icons.svg");
+        background-size: 125% auto;
+        background-position: 0 -303px;
+    }
+    .instagram{
+        border: 1px solid #ddd;
+    }
+    .instagram:hover, .instagram:hover{
+        background-image: url("../../images/icons/icons.svg");
+        background-size: 100% auto;
+        background-position: 0 -79px;
+        border: none;
+    }
+    img{
+        margin-left: 15px;
+        margin-top: 7px;
     }
 }
